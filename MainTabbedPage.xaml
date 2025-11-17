@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:MauiWindowingTest"
+            x:Class="MauiWindowingTest.MainTabbedPage">
+
+    <local:DefaultBotPage Title="Red Tab">
+        <local:DefaultBotPage.BindingContext>
+            <local:DefaultBotPage BindableBackgroundColor="Red" ImageRotation="0" />
+        </local:DefaultBotPage.BindingContext>
+    </local:DefaultBotPage>
+
+    <local:DefaultBotPage Title="Green Tab">
+        <local:DefaultBotPage.BindingContext>
+            <local:DefaultBotPage BindableBackgroundColor="Green" ImageRotation="45" />
+        </local:DefaultBotPage.BindingContext>
+    </local:DefaultBotPage>
+
+    <local:DefaultBotPage Title="Blue Tab">
+        <local:DefaultBotPage.BindingContext>
+            <local:DefaultBotPage BindableBackgroundColor="Blue" ImageRotation="90" />
+        </local:DefaultBotPage.BindingContext>
+    </local:DefaultBotPage>
+
+</TabbedPage>

@@ -1,0 +1,113 @@
+################################################################################
+# Ignore standard .NET build files and directories
+################################################################################
+[Bb]in/
+[Oo]bj/
+.vs/
+.vspscc
+.suo
+*.user
+*.userprefs
+
+# Visual Studio Code cache directory
+.vscode/
+
+# Package files
+*.nupkg
+*.snupkg
+*.appx
+*.appxbundle
+*.msi
+*.msp
+*.msm
+*.zip
+*.vsix
+.paket/paket-files
+
+# C/C++ build files
+*.obj
+*.lib
+*.so
+*.a
+*.ilk
+*.pdb
+*.pgc
+*.pgd
+*.meta
+*.tlog
+
+# IDE-specific
+[Dd]ebug/
+[Rr]elease/
+# Mono auto-generated files
+mono_crash.*
+
+################################################################################
+# .NET MAUI iOS-specific
+################################################################################
+# iOS build and dependency files
+# (Typically generated during the build process on macOS)
+**/*.app/
+**/*.ipa
+**/*.dSYM/
+**/*.xcarchive/
+**/*.pkg
+
+# The platform-specific build output for iOS
+**/bin/Debug/net*-ios/*
+**/obj/Debug/net*-ios/*
+**/bin/Release/net*-ios/*
+**/obj/Release/net*-ios/*
+
+# Xcode specific files (even if mostly handled by VS for Mac)
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.moved-aside
+DerivedData/
+*.xcuserstate
+
+# Xamarin-era files (for legacy compatibility)
+**/*.dll.mdb
+**/*.pdb
+**/*.a
+**/*.dylib
+
+################################################################################
+# Ignore macOS-specific files
+################################################################################
+# Finder metadata
+.DS_Store
+# Spotlight metadata
+.Spotlight-V100
+# Thumbnails
+.Trashes
+# Various caches
+.fseventsd/
+# User-specific preferences
+.local/
+
+################################################################################
+# CUSTOM DLLS FOR PLATFORMS
+################################################################################
+# Un-ignore the specific 'Lib' folders and their contents
+!**/Platforms/iOS/Lib/
+!**/Platforms/iOS/Lib/*.dll
+!**/Platforms/iOS/Lib/*.a
+
+# NOTE: The default Visual Studio .gitignore file typically includes:
+
+# If your custom DLLs are not being tracked, make sure to add the two lines above.
+# The `!` operator inverts the pattern, so Git will track the DLLs only in the
+# specified folder, even if a more general ignore pattern exists.
+
+# User-specific files
+*.csproj.user
+*.suo
+
+# TFVC-related files (ignore for Git)
+*.vspscc
+
